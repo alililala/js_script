@@ -35,7 +35,7 @@ if (!$.isNode()) {
     fsjd_notify_control = false;
   }
 
-  let filePath = path.resolve(__dirname, "../log/jd_get_share_code");
+  let filePath = path.resolve(__dirname, "../log/jcode");
   let readDir = fs.readdirSync(filePath).reverse();
   let fileName;
 
@@ -241,7 +241,7 @@ function showFormatMsg(shareCodeObj) {
     formatShareCodesForLinux(
       shareCodeObj.Jdcfd,
       "京喜财富岛",
-      "MyJdcfd",
+      "Mycfd",
       "ForOtherJdcfd"
     );
   // shareCodeObj.Global &&
